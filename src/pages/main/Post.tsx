@@ -90,7 +90,7 @@ const Post = (props: Props) => {
       <div className="footer">
         <p>@{post.username}</p>
         <button onClick={hasUserLiked ? removeLike : addLike}>
-          {hasUserLiked ? <>&#128078</> : <>&#128077</>};
+          {hasUserLiked ? <>👎</> : <>👍</>};
         </button>
         {likes && <p>Likes:{likes.length}</p>}
       </div>
